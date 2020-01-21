@@ -1,0 +1,54 @@
+body {
+    background: #F5F5F5;        
+    height: 1200px; 
+    margin: 0;   
+}
+#header {
+    width: 100%;
+    height: 80px;
+    background: white;
+    border-radius: 0 0 35px 35px;  
+    top: 0;  
+    position: relative; 
+    box-shadow: 8px 8px 12px #ddd;  
+    z-index: 1;  
+}
+.header-container i {
+    float: left;
+    margin-left: 30px;  
+    font-size: 40px; 
+    color: blue; 
+    margin-top: 15px;    
+}
+.header-container h1 {
+    float: left;
+    padding-left: 15px; 
+    font-size: 40px;  
+    color: lightgreen; 
+    margin-top: 15px;
+}
+.search-user {    
+    margin-right: 20px; 
+    float: right;   
+    margin-top: 25px;
+    font-size: 30px;
+    color: blue;    
+}
+.search-user i {
+    margin-right: 35px;
+}
+#recipes-container {
+    width: 96%;
+    background:#F5F5F5;
+    position: absolute;
+    margin-left: 25px;
+}
+#recipes-container h2 {
+    text-align: center;
+    font-size: 40px;
+    color: lightgreen;
+}
+
+
+
+
