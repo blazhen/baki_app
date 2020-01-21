@@ -40,13 +40,49 @@ body {
 #recipes-container {
     width: 96%;
     background:#F5F5F5;
-    position: absolute;
-    margin-left: 25px;
+    position: relative; 
+    margin-left: 30px;
 }
-#recipes-container h2 {
-    text-align: center;
+.header-recipes {
     font-size: 40px;
     color: lightgreen;
+    margin-left: 25px;
+}
+.slider-container {    
+    background: F5F5F5;
+    position: relative;
+    }
+.img-con {
+    width: 300px;
+    height: 300px;
+    border-radius: 25px 25px 25px 25px;
+}
+.in-slider {
+    margin: 10px 10px 10px 10px;
+}
+.in-header a {
+    color: lightgreen;
+    margin-left: 25px;
+    text-decoration: none;
+}
+.slick-prev:before,
+.slick-next:before {
+        color: lightgreen;
+    }
+
+/* Inrecipe CSS */
+#in-container {
+    width: 100%;
+    height: 1200px;
+    background: green;
+}
+.recipe-container {
+    width: 350px;
+    height: 350px;
+    background: blue;
+    display: inline-block;
+    margin: 15px 0 0 25px;
+
 }
 
 
