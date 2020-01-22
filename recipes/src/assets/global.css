@@ -50,10 +50,11 @@ body {
 }
 /* END OF HEADER CONTAINER */
 .slider-container {    
-    background: F5F5F5;
+    background: white;
     position: relative;
     width: 100%;
-    height: 450px;  
+    height: 450px; 
+    border-radius: 20px 20px 20px 20px;
     }
 .in-slider {        
     padding-left: 10px;
@@ -64,11 +65,12 @@ body {
     width: 100%;
     height: 250px;
     border-radius: 14% 14% 14% 14%;
+    margin: 25px 25px 25px 25px;
 }
 .img-con {
-    width: 100%;
+    width: 90%;
     height: 50%;
-    background: white;
+    
 } 
 .star-icon {
     margin-left: 5%; 
@@ -112,6 +114,9 @@ body {
  position: absolute; 
  bottom: 15px;
  width: 96%;
+}
+.slick-slide {
+    padding-left: 10px;
 }
 
 

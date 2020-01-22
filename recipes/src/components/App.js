@@ -13,7 +13,7 @@ export default class App extends React.Component {
                 <MainHeader/>
                 <Switch>
                 <Route exact path='/' component={Sliderce}/>
-                <Route path='/:id' component={Recipes}/>                               
+                {/* <Route path='/:id' component={Recipes}/>                                */}
 
                 </Switch>
             </Router>        
