@@ -1,6 +1,4 @@
 import React from 'react';
-import Recipes from './Recipes';
-import Inrecipe from './Inrecipe';
 import axios from 'axios'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -25,8 +23,13 @@ export default class Header extends React.Component {
             <div className="in-slider">
            <Link to ='/recipes'><img className="img-con" src={"https://spoonacular.com/recipeImages/" +  element.imageUrls} alt="test"></img></Link> 
             <h1 className="slider-h1">{element.title}</h1>
-          <i class="far fa-star">{element.readyInMinutes}</i>
-          <i class="far fa-star">{element.servings}</i>
+            <div className="star-icon">
+          <i class="far fa-star"> {element.readyInMinutes} Rating</i>
+          </div>
+          <div className="food-icon">
+          <i class="fas fa-utensils"> {element.servings} serving</i>
+          </div>
+          
             
             </div>
         </div>
@@ -45,8 +48,8 @@ export default class Header extends React.Component {
             dots: true,
             infinite: true,
             speed: 600,
-            slidesToShow: 3,
-            slidesToScroll: 1,
+            slidesToShow: 4,
+            slidesToScroll: 2,
             initialSlide: 0
           };
         
