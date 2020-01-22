@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Header from "./Header";
+import Sliderce from "./Sliderce";
 import '../assets/global.css'
-
+import {MainHeader} from './MainHeader'
 
 
 export default class App extends React.Component {
@@ -10,8 +10,10 @@ export default class App extends React.Component {
         return ( 
             
             <Router>
+                <MainHeader/>
                 <Switch>
-                <Route exact path='/' component={Header}/>                               
+                <Route exact path='/' component={Sliderce}/>
+                <Route path='/:id' component={Recipes}/>                               
 
                 </Switch>
             </Router>        
