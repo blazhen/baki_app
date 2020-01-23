@@ -10,16 +10,19 @@ export default class Sliderce extends React.Component {
     constructor(props){
         super(props)
         this.state={
-            data : null
+            data : null,
+            
         }
     }
    
     componentDidMount(){
+      
         axios.get('https://api.spoonacular.com/recipes/search?query=burger&number=10&apiKey=a8a78069d78b4d5d99564bbf6316dced')
         .then((response) => { 
             console.log(response.data)
           const recipes = response.data.results.map(element=>{
-          return ( <div className="slider-container">
+          return ( 
+          <div className="slider-container">
             <div className="in-slider">
               <div className="img-con">
            <Link to ={'/'+ element.id} ><img className="img-in" src={"https://spoonacular.com/recipeImages/" +  element.imageUrls} alt="test"></img></Link>
@@ -30,8 +33,8 @@ export default class Sliderce extends React.Component {
             </div>
             
             <div className="slider-footer">
-            <div className="star-icon">
-          <i className="far fa-star"> {element.readyInMinutes}Rating</i>
+            <div className="clock-icon">
+          <i className="far fa-clock"> {element.readyInMinutes}minutes</i>
           </div>
           <div className="food-icon">
           <i className="fas fa-utensils"> {element.servings}serving</i>
@@ -41,7 +44,9 @@ export default class Sliderce extends React.Component {
         </div>
         )
           })
-          this.setState({data : recipes})
+          this.setState({
+            data : recipes
+                     })
             
         })      
         .catch((err) => {
