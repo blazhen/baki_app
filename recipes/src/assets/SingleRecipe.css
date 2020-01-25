@@ -1,0 +1,20 @@
+.recipe-container {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+.recipe-info {
+    width: 50%;
+    background: blue;
+    height: auto;
+}
+.ingredients-container {
+    width: 50%;
+    background: yellow;
+    height: auto;
+}
+.recipes-img img{
+    height: 13em;
+}

@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Link } from "react-router-dom";
+import '../assets/Sliderce.css'
 
 
 export default class Sliderce extends React.Component {
@@ -27,19 +28,19 @@ export default class Sliderce extends React.Component {
               <div className="img-con">
            <Link to ={'/'+ element.id} ><img className="img-in" src={"https://spoonacular.com/recipeImages/" +  element.imageUrls} alt="test"></img></Link>
              </div>   
-             <div className="title">
-            <span style={{fontSize:"40px"}}>{element.title}</span>
-            </div>                                   
-            </div>
-            
+             <div className="inslider-title">
+            <span>{element.title}</span>
+            </div>   
             <div className="slider-footer">
             <div className="clock-icon">
-          <i className="far fa-clock"> {element.readyInMinutes}minutes</i>
+          <i className="far fa-clock"> {element.readyInMinutes} minutes</i>
           </div>
           <div className="food-icon">
-          <i className="fas fa-utensils"> {element.servings}serving</i>
+          <i className="fas fa-utensils"> {element.servings} serving</i>
           </div>
-          </div>
+          </div>                                
+            </div>            
+           
           
         </div>
         )
@@ -60,7 +61,7 @@ export default class Sliderce extends React.Component {
             infinite: true,
             speed: 600,
             slidesToShow: 4,
-            slidesToScroll: 2,
+            slidesToScroll: 1,
             initialSlide: 0,
             
           };
@@ -69,10 +70,12 @@ export default class Sliderce extends React.Component {
         <React.Fragment>
         
         <div id='recipes-container'>                
-                    <h2 className="header-recipes">Weekly Top Picks</h2>                
+                    <h2 className="header-recipes">Weekly Top Picks</h2>    
+                            
                 <Slider {...settings} >
             {this.state.data}
       </Slider>
+       
             </div>            
               </React.Fragment>     
             
