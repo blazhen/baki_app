@@ -34,7 +34,7 @@ export default class SingleRecipe extends React.Component{
                     <div className="recipe-info">
                         <div className="recipes-title">
                          <h1>{this.props.data.title}</h1>                         
-                     </div>
+                        </div>
                      <div className="recipes-img">
                          <img src={this.props.data.image} alt="recipe"></img>
                      </div>                
@@ -43,18 +43,19 @@ export default class SingleRecipe extends React.Component{
                          <i className="far fa-clock"><span> This recipe can be ready in: {this.props.data.readyInMinutes} mins.</span></i>
                          </div>
                          <div className="recipes-food">
-                <i className="fas fa-utensils"><span> This recipe can serve up to: {this.props.data.servings}</span></i>
+                <i className="fas fa-utensils"><span> This recipe can serve up to: {this.props.data.servings} people.</span></i>
                          </div>
                          <div className="preparation-mins">
                 <i className="fas fa-clock"><span> Preparation time: {this.props.data.preparationMinutes} mins.</span></i>
                          </div>
                          <div className="cooking-mins">
-                <i className="fas fa-stopwatch"><span> Cooking mins: {this.props.data.cookingMinutes}</span></i>
+                <i className="fas fa-stopwatch"><span> Cooking: {this.props.data.cookingMinutes} mins.</span></i>
                          </div>
                         </div>
                         <div className="vegeterian">
                             <h1>{!this.props.data.Vegetarian ? <div>Not Vegeterian</div> : <div>Vegeterian</div>}</h1>
-                        </div>
+                            <h1>{!this.props.data.dairyFree ? <div>Not Dairy Free</div> : <div>Is Diary Free</div>}</h1>
+                        </div>                        
                      </div>
                 </div>
                 <div className="ingredients-container">                    
@@ -71,8 +72,7 @@ export default class SingleRecipe extends React.Component{
                         {this.getInstructionSteps()}                                  
                     </ol>   
                 </div>                       
-            </div> 
-            <Sliderce/>
+            </div>            
                               
                     
              </React.Fragment>

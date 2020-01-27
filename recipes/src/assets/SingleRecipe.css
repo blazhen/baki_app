@@ -18,6 +18,7 @@
 }
 .recipe-info {
     text-align: center;
+    
 }
 .vegeterian h1 {
     font-size: 25px;
@@ -59,5 +60,8 @@
 .sbs-container ol li {
     padding-bottom: 2%;
     
+}
+.recipes-clock i {
+    font-weight: bold;
 }
 

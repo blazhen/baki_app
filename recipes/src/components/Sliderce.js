@@ -63,7 +63,7 @@ export default class Sliderce extends React.Component {
             slidesToShow: 4,
             slidesToScroll: 1,
             autoplay: true,
-            autoplaySpeed: 2500,
+            autoplaySpeed: 3000,
             pauseOnHover: true
             
           };
