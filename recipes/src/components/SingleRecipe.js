@@ -1,5 +1,6 @@
 import React from 'react'
 import '../assets/SingleRecipe.css'
+import Sliderce from './Sliderce'
 
 export default class SingleRecipe extends React.Component{ 
     constructor(props){
@@ -71,6 +72,7 @@ export default class SingleRecipe extends React.Component{
                     </ol>   
                 </div>                       
             </div> 
+            <Sliderce/>
                               
                     
              </React.Fragment>
