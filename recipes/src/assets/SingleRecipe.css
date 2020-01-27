@@ -20,8 +20,10 @@
     text-align: center;
     
 }
-.vegeterian h1 {
-    font-size: 25px;
+.something h1 {
+    font-size: 20px;
+    display: inline-flex;
+    padding-left: 10px;
 }
 
 /* Step by Step */
@@ -64,4 +66,8 @@
 .recipes-clock i {
     font-weight: bold;
 }
-
+.wine-pairing {
+    padding-top: 10px;
+    font-size: 18px;
+    color: teal;
+}
