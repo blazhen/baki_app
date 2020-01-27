@@ -27,6 +27,7 @@ export default class SingleRecipe extends React.Component{
                 
                 return(
                     <React.Fragment>
+                        
                     <div className="recipe-container">
                 <div className="recipes-info">
                     <div className="recipe-info">
@@ -50,8 +51,8 @@ export default class SingleRecipe extends React.Component{
                 <i className="fas fa-stopwatch"><span> Cooking mins: {this.props.data.cookingMinutes}</span></i>
                          </div>
                         </div>
-                        <div>
-                            {!this.props.data.Vegetarian ? <div>Not Vegeterian</div> : <div>Vegeterian</div>}
+                        <div className="vegeterian">
+                            <h1>{!this.props.data.Vegetarian ? <div>Not Vegeterian</div> : <div>Vegeterian</div>}</h1>
                         </div>
                      </div>
                 </div>
