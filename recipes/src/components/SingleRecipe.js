@@ -76,7 +76,7 @@ export default class SingleRecipe extends React.Component{
 </div>
     <div className="instruction-container">   
         <div className="ins-title">
-             <span className="ins-title1">Step by Step</span>              
+             <span>Step by Step</span>              
         </div>
              <div className="ins-list">                   
                 <ol>

@@ -56,12 +56,38 @@
 }
 .recipes-title h1 {
     box-shadow: 0 5px 0 0 white;
-
+    animation: move 4s;
+    -webkit-animation: move 2.5s;
 }
+@keyframes move {
+    from {
+      margin-left: 100%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+              
+  @-webkit-keyframes move {
+    from {
+      margin-left: 100%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
 .recipes-title h1:hover {
     color: white;
     transform: rotate3d(1, 0, 1, 5deg);
-    transition: 0.6s;    
+    transition: 0.6s;  
+    text-shadow: 1px 1px rgb(193, 243, 193);      
 }
 
 /* Step by Step */
@@ -86,13 +112,37 @@
     color: white;   
     transform: rotate3d(1, 0, 1, 5deg);
     transition: 0.6s;
+    text-shadow: 2px 2px rgb(193, 243, 193); 
 }
 .ingredients-container h1 {
     text-align: center; 
     color: teal;
     box-shadow: 0 5px 0 0  white;;
-    
+    -webkit-animation: move 2.5s;
 }
+@keyframes move {
+    from {
+      margin-left: 100%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+              
+  @-webkit-keyframes move {
+    from {
+      margin-left: 100%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
 .ol-list ol {
     list-style: none;    
     
@@ -143,11 +193,35 @@
 .instruction-container ol li:first-letter {
     text-transform: capitalize;
  }
- .ins-title  {
+ .ins-title {
      text-align: center;
      padding-top: 1%;
      font-size: 2.5em;
- }
+ -webkit-animation: move 2.5s;
+}
+@keyframes move {
+    from {
+      margin-left: 100%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+              
+  @-webkit-keyframes move {
+    from {
+      margin-left: 100%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
  .ins-list ol li {
      padding-bottom: 2%;     
  }
