@@ -59,9 +59,14 @@ export default class SingleRecipe extends React.Component{
                             <h1>{!this.props.data.dairyFree ? <div>Not Dairy Free</div> : <div>Diary Free</div>}</h1>
                         </div> 
                         <div className="winePairing">
-                            <span>
-                                {this.props.data.winePairing.pairingText}
-                            </span>
+                            <div className="wine-title">
+                                <h1>Wine Pairing</h1>
+                            </div>
+                            <div className="wine-text">
+                                <span>
+                                    {this.props.data.winePairing.pairingText}
+                                </span>
+                            </div>
                                 </div>                       
                         
     </div>                

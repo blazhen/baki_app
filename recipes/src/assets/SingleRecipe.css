@@ -160,15 +160,24 @@
 .recipes-clock i {
     font-weight: bold;
 }
-.winePairing {
+.wine-text {
     font-size: 1em;
     color: teal;
-    margin: 1%;    
+    margin: 2%;    
 }
-.winePairing:hover {
+.wine-text:hover {
     font-size: 1.3em;
+    color: white;        
+}
+.wine-title {
+    color: teal;
+    font-size: 1em;
+    margin-left: 2%;
+}
+.wine-title:hover {
     color: white;
-        
+    font-size: 1em;
+    margin-left: 2%;
 }
 
 /* Instructions */
@@ -197,7 +206,7 @@
      text-align: center;
      padding-top: 1%;
      font-size: 2.5em;
- -webkit-animation: move 2.5s;
+    -webkit-animation: move 2.5s;
 }
 @keyframes move {
     from {
@@ -209,8 +218,7 @@
       margin-left: 0%;
       width: 100%;
     }
-  }
-              
+  }              
   @-webkit-keyframes move {
     from {
       margin-left: 100%;
