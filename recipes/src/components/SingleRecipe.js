@@ -19,7 +19,7 @@ export default class SingleRecipe extends React.Component{
      getIngredients = () => {
         var ingredients = []
          for(let i = 0; i<this.props.data.extendedIngredients.length; i++){
-              ingredients.push(<li>{this.props.data.extendedIngredients[i].name}</li>)
+              ingredients.push(<li>{this.props.data.extendedIngredients[i].amount} {this.props.data.extendedIngredients[i].unit} {this.props.data.extendedIngredients[i].name}</li>)
               console.log(this.props.data.extendedIngredients[i])   
          }
          return ingredients
@@ -64,7 +64,7 @@ export default class SingleRecipe extends React.Component{
                             </div>
                             <div className="wine-text">
                                 <span>
-                                    {this.props.data.winePairing.pairingText}
+                                 {this.props.data.winePairing.pairingText}
                                 </span>
                             </div>
                                 </div>                       
@@ -74,7 +74,7 @@ export default class SingleRecipe extends React.Component{
                         <h1>Ingredients</h1>
                         <div className="ol-list">
                         <ol>   
-                            {this.getIngredients()}
+                         {this.getIngredients()}
                         </ol> 
                         </div>                   
                      </div>                                                       
@@ -89,9 +89,11 @@ export default class SingleRecipe extends React.Component{
                 </ol>  
             </div>             
                          
-    </div>            
-                              
-                    
+    </div>     
+    <div className="created-by">
+    <span>App Created by:<a href="https://github.com/blazhen/baki_app" target="_blank">Baki</a></span>
+        </div>   
+                                         
              </React.Fragment>
                 )
              }

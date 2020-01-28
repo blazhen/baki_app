@@ -78,7 +78,8 @@ export default class Sliderce extends React.Component {
             {this.state.data}
       </Slider>
        
-            </div>            
+            </div>   
+                    
               </React.Fragment>     
             
         )
