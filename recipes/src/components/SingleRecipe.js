@@ -34,7 +34,10 @@ export default class SingleRecipe extends React.Component{
     <div className="recipes-info">
         <div className="recipe-info">
             <div className="recipes-title">
-                <h1>{this.props.data.title}</h1>                         
+             <h1>{this.props.data.title}</h1>
+                <div className="likes">
+                <i className="far fa-thumbs-up">{this.props.data.aggregateLikes}</i>  
+                </div>                       
             </div>
                 <div className="recipes-img">
                     <img src={this.props.data.image} alt="recipe"></img>
@@ -55,7 +58,7 @@ export default class SingleRecipe extends React.Component{
                     </div>                                                
         </div>
                      <div className="something">
-                            <h1>{!this.props.data.Vegetarian ? <div>Not Vegeterian</div> : <div>Vegeterian</div>}</h1>
+                            <h1>{!this.props.data.glutenFree ? <div>Not Gluten Free</div> : <div>Gluten Free</div>}</h1>
                             <h1>{!this.props.data.dairyFree ? <div>Not Dairy Free</div> : <div>Diary Free</div>}</h1>
                         </div> 
                         <div className="winePairing">
