@@ -35,8 +35,9 @@
 .recipe-info {
     text-align: center;    
 }
-.recipes-footer {
-    font-size: 20px;
+.recipes-footer i {
+    font-size: 20px;    
+    padding: 0.5%;
 }
 .recipes-footer:hover {
     font-size: 1.3em;
@@ -246,6 +247,7 @@
  .ins-list ol li:hover {
      color: white;
      font-size: 2em;
+     transition: 0.3s;
  }
 
 
