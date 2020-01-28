@@ -3,7 +3,8 @@ import '../assets/SingleRecipe.css'
 
 export default class SingleRecipe extends React.Component{ 
     constructor(props){
-        super(props)
+        super(props);     
+        
         
     }
      
@@ -55,24 +56,28 @@ export default class SingleRecipe extends React.Component{
         </div>
                      <div className="something">
                             <h1>{!this.props.data.Vegetarian ? <div>Not Vegeterian</div> : <div>Vegeterian</div>}</h1>
-                            <h1>{!this.props.data.dairyFree ? <div>Not Dairy Free</div> : <div>Is Diary Free</div>}</h1>
+                            <h1>{!this.props.data.dairyFree ? <div>Not Dairy Free</div> : <div>Diary Free</div>}</h1>
                         </div>                        
                         
     </div>                
                     <div className="ingredients-container">                    
                         <h1>Ingredients</h1>
-                        <ol>
+                        <div className="ol-list">
+                        <ol>   
                             {this.getIngredients()}
-                        </ol>                    
+                        </ol> 
+                        </div>                   
                      </div>                                                       
 </div>
     <div className="instruction-container">   
-        <div className="sbs-container">
-             <h1>Step by Step</h1>                       
+        <div className="ins-title">
+             <span className="ins-title1">Step by Step</span>              
+        </div>
+             <div className="ins-list">                   
                 <ol>
                     {this.getInstructionSteps()}                                  
-                </ol>   
-        </div>    
+                </ol>  
+            </div>             
                          
     </div>            
                               

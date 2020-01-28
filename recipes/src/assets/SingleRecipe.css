@@ -10,20 +10,47 @@
     width: 60%;
     background: rgb(163, 250, 163);
     height: auto;
-    border-radius: 25px;
+    border-radius: 25px 25px 0 25px;
 }
 .recipes-img img{
-    height: 13em;
+    height: 18em;
     border-radius: 10%;
+    padding-bottom: 1%;
+}
+.recipes-img img:hover{
+    height: 20em;
+    border-radius: 10%;
+    padding-bottom: 1%;
+    transition: 0.6s;
+    
 }
 .recipe-info {
-    text-align: center;
-    
+    text-align: center;    
+}
+.recipes-footer {
+    font-size: 20px;
+}
+.recipes-footer:hover {
+    font-size: 1.3em;
+    color: white;   
+    transform: scale(1.3);
+    transition: 0.6s;
 }
 .something h1 {
     font-size: 20px;
     display: inline-flex;
     padding-left: 10px;
+}
+.something h1:hover {
+    color: white;
+    transform: skew(13deg); 
+    transition: 0.5s;    
+}
+.recipes-title h1:hover {
+    color: white;
+    transform: rotate3d(1, 0, 1, 5deg);
+    transition: 0.6s;
+    
 }
 
 /* Step by Step */
@@ -34,8 +61,44 @@
     background: rgb(94, 238, 94);
     font-size: 25px;
     padding-left: 30px;
-    border-radius: 25px;
+    border-radius: 25px 25px 25px 0;
 }
+.ingredients-container h1:hover {
+    text-align: center; 
+    color: white;   
+    transform: rotate3d(1, 0, 1, 5deg);
+    transition: 0.6s;
+}
+.ingredients-container h1 {
+    text-align: center; 
+    color: teal;
+    
+}
+.ol-list ol {
+    list-style: none;    
+    
+}
+.ol-list ol li:hover {
+    color: white; 
+    transform: scale(1.6);
+    margin-left: 16%; 
+    transition: 0.6s;
+    
+}
+.ingredients-container  ol li:first-letter {
+    text-transform: capitalize;    
+}
+.recipes-clock i {
+    font-weight: bold;
+}
+.wine-pairing {
+    padding-top: 10px;
+    font-size: 18px;
+    color: teal;
+}
+
+/* Instructions */
+
 .instruction-container {
     width: 80%;
     background: rgb(113, 199, 228);
@@ -46,28 +109,31 @@
     border-radius: 25px;
     color: teal;
 }
-.ingredients-container h1 {
-    text-align: center;    
-}
-.ingredients-container  ol li:first-letter {
-    text-transform: capitalize;    
-}
 .instruction-container ol li:first-letter {
-   text-transform: capitalize;
-}
-.sbs-container h1 {
-    text-align: center;
-    padding-top: 1%;
-}
-.sbs-container ol li {
-    padding-bottom: 2%;
-    
-}
-.recipes-clock i {
-    font-weight: bold;
-}
-.wine-pairing {
-    padding-top: 10px;
-    font-size: 18px;
-    color: teal;
-}
+    text-transform: capitalize;
+ }
+ .ins-title  {
+     text-align: center;
+     padding-top: 1%;
+     font-size: 2.5em;
+ }
+ .ins-list ol li {
+     padding-bottom: 2%;     
+ }
+ .ins-title:hover {
+     color: white;
+     transform: scale3d(1.1, 1.1, 1.1 );
+     transform: rotate3d(1, 0, 1, 5deg);
+     transition: 0.8s;
+ }
+  .ins-list ol {
+     list-style: none;
+     
+ }
+ .ins-list ol li:hover {
+     color: white;
+     font-size: 2em;
+ }
+
+
+
