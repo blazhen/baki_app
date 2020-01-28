@@ -20,19 +20,19 @@ html,body {
     float: left;
     margin-left: 30px;  
     font-size: 40px; 
-    color: lightblue; 
+    color: #4CD4F0;
     margin-top: 15px;    
 }
 .header-container h1 {
     float: left;
     padding-left: 15px; 
     font-size: 40px;  
-    color: lightgreen; 
+    color: #7FFFD4; 
     margin-top: 15px;
 }
 .header-recipes {
     font-size: 40px;
-    color: lightgreen;
+    color: #7FFFD4; 
     margin-left: 25px;
 }
 .search-user {    
@@ -40,7 +40,7 @@ html,body {
     float: right;   
     margin-top: 25px;
     font-size: 30px;
-    color: lightblue;    
+    color: #4CD4F0;   
 }
 .search-user i {
     margin-right: 35px;
