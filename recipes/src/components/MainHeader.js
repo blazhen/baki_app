@@ -1,7 +1,9 @@
 import React from 'react'
 
-export const  MainHeader = () => {
-    return (
+export  class MainHeader extends React.Component  {   
+     render () {
+       
+        return (
         <div id="header">
             <div className="header-container">                
                     <i className="fas fa-home"></i>
@@ -13,4 +15,5 @@ export const  MainHeader = () => {
             </div>            
         </div>
     )
+    }
 }
